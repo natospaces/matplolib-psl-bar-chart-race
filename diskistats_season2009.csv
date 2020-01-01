@@ -1,0 +1,276 @@
+year,club,SeasonGoalScored,goals,group
+2009,Ajax Cape Town,27,27,urban warriors 
+2010,Ajax Cape Town,50,77,urban warriors 
+2011,Ajax Cape Town,42,119,urban warriors 
+2012,Ajax Cape Town,34,153,urban warriors 
+2013,Ajax Cape Town,27,180,urban warriors 
+2014,Ajax Cape Town,34,214,urban warriors 
+2015,Ajax Cape Town,34,248,urban warriors 
+2016,Ajax Cape Town,29,277,urban warriors 
+2017,Ajax Cape Town,21,298,urban warriors 
+2018,Ajax Cape Town,0,298,urban warriors 
+2019,Ajax Cape Town,0,298,urban warriors 
+2009,Amazulu,30,30,usuthu 
+2010,Amazulu,43,73,usuthu 
+2011,Amazulu,32,105,usuthu 
+2012,Amazulu,22,127,usuthu 
+2013,Amazulu,27,154,usuthu 
+2014,Amazulu,31,185,usuthu 
+2015,Amazulu,0,185,usuthu 
+2016,Amazulu,0,185,usuthu 
+2017,Amazulu,30,215,usuthu 
+2018,Amazulu,33,248,usuthu 
+2019,Amazulu,9,257,usuthu 
+2009,Baroka FC,0,0,bakgakga 
+2010,Baroka FC,0,0,bakgakga 
+2011,Baroka FC,0,0,bakgakga 
+2012,Baroka FC,0,0,bakgakga 
+2013,Baroka FC,0,0,bakgakga 
+2014,Baroka FC,0,0,bakgakga 
+2015,Baroka FC,0,0,bakgakga 
+2016,Baroka FC,26,26,bakgakga 
+2017,Baroka FC,32,58,bakgakga 
+2018,Baroka FC,27,85,bakgakga 
+2019,Baroka FC,9,94,bakgakga 
+2009,Bidvest Wits,32,32,the clever boys 
+2010,Bidvest Wits,47,79,the clever boys 
+2011,Bidvest Wits,31,110,the clever boys 
+2012,Bidvest Wits,34,144,the clever boys 
+2013,Bidvest Wits,34,178,the clever boys 
+2014,Bidvest Wits,34,212,the clever boys 
+2015,Bidvest Wits,44,256,the clever boys 
+2016,Bidvest Wits,47,303,the clever boys 
+2017,Bidvest Wits,27,330,the clever boys 
+2018,Bidvest Wits,45,375,the clever boys 
+2019,Bidvest Wits,16,391,the clever boys 
+2009,Black Leopards,0,0,lidoda duvha 
+2010,Black Leopards,0,0,lidoda duvha 
+2011,Black Leopards,36,36,lidoda duvha 
+2012,Black Leopards,34,70,lidoda duvha 
+2013,Black Leopards,0,70,lidoda duvha 
+2014,Black Leopards,0,70,lidoda duvha 
+2015,Black Leopards,0,70,lidoda duvha 
+2016,Black Leopards,0,70,lidoda duvha 
+2017,Black Leopards,0,70,lidoda duvha 
+2018,Black Leopards,30,100,lidoda duvha 
+2019,Black Leopards,13,113,lidoda duvha 
+2009,Bloemfontein Celtic,38,38,phunya selesele 
+2010,Bloemfontein Celtic,37,75,phunya selesele 
+2011,Bloemfontein Celtic,35,110,phunya selesele 
+2012,Bloemfontein Celtic,32,142,phunya selesele 
+2013,Bloemfontein Celtic,35,177,phunya selesele 
+2014,Bloemfontein Celtic,34,211,phunya selesele 
+2015,Bloemfontein Celtic,30,241,phunya selesele 
+2016,Bloemfontein Celtic,16,257,phunya selesele 
+2017,Bloemfontein Celtic,25,282,phunya selesele 
+2018,Bloemfontein Celtic,35,317,phunya selesele 
+2019,Bloemfontein Celtic,20,337,phunya selesele 
+2009,Cape Town City,0,0,the citizens 
+2010,Cape Town City,0,0,the citizens 
+2011,Cape Town City,0,0,the citizens 
+2012,Cape Town City,0,0,the citizens 
+2013,Cape Town City,0,0,the citizens 
+2014,Cape Town City,0,0,the citizens 
+2015,Cape Town City,0,0,the citizens 
+2016,Cape Town City,47,47,the citizens 
+2017,Cape Town City,26,73,the citizens 
+2018,Cape Town City,47,120,the citizens 
+2019,Cape Town City,19,139,the citizens 
+2009,Chippa United,0,0,chilli boys 
+2010,Chippa United,0,0,chilli boys 
+2011,Chippa United,0,0,chilli boys 
+2012,Chippa United,28,28,chilli boys 
+2013,Chippa United,0,28,chilli boys 
+2014,Chippa United,23,51,chilli boys 
+2015,Chippa United,42,93,chilli boys 
+2016,Chippa United,27,120,chilli boys 
+2017,Chippa United,27,147,chilli boys 
+2018,Chippa United,27,174,chilli boys 
+2019,Chippa United,10,184,chilli boys 
+2009,Free State Stars,29,29,ea lla koto 
+2010,Free State Stars,28,57,ea lla koto 
+2011,Free State Stars,38,95,ea lla koto 
+2012,Free State Stars,32,127,ea lla koto 
+2013,Free State Stars,32,159,ea lla koto 
+2014,Free State Stars,34,193,ea lla koto 
+2015,Free State Stars,28,221,ea lla koto 
+2016,Free State Stars,26,247,ea lla koto 
+2017,Free State Stars,29,276,ea lla koto 
+2018,Free State Stars,31,307,ea lla koto 
+2019,Free State Stars,0,307,ea lla koto 
+2009,Golden Arrows,25,25,abafana besthende 
+2010,Golden Arrows,44,69,abafana besthende 
+2011,Golden Arrows,40,109,abafana besthende 
+2012,Golden Arrows,28,137,abafana besthende 
+2013,Golden Arrows,26,163,abafana besthende 
+2014,Golden Arrows,0,163,abafana besthende 
+2015,Golden Arrows,28,191,abafana besthende 
+2016,Golden Arrows,32,223,abafana besthende 
+2017,Golden Arrows,36,259,abafana besthende 
+2018,Golden Arrows,27,286,abafana besthende 
+2019,Golden Arrows,14,300,abafana besthende 
+2009,Highlands Park,0,0,lions of the north 
+2010,Highlands Park,0,0,lions of the north 
+2011,Highlands Park,0,0,lions of the north 
+2012,Highlands Park,0,0,lions of the north 
+2013,Highlands Park,0,0,lions of the north 
+2014,Highlands Park,0,0,lions of the north 
+2015,Highlands Park,0,0,lions of the north 
+2016,Highlands Park,26,26,lions of the north 
+2017,Highlands Park,0,26,lions of the north 
+2018,Highlands Park,35,61,lions of the north 
+2019,Highlands Park,16,77,lions of the north 
+2009,Jomo Cosmos,21,21,ezenkosi 
+2010,Jomo Cosmos,0,21,ezenkosi 
+2011,Jomo Cosmos,24,45,ezenkosi 
+2012,Jomo Cosmos,0,45,ezenkosi 
+2013,Jomo Cosmos,0,45,ezenkosi 
+2014,Jomo Cosmos,0,45,ezenkosi 
+2015,Jomo Cosmos,20,65,ezenkosi 
+2016,Jomo Cosmos,0,65,ezenkosi 
+2017,Jomo Cosmos,0,65,ezenkosi 
+2018,Jomo Cosmos,0,65,ezenkosi 
+2019,Jomo Cosmos,0,65,ezenkosi 
+2009,Kaizer Chiefs,39,39,amakhosi 
+2010,Kaizer Chiefs,45,84,amakhosi 
+2011,Kaizer Chiefs,35,119,amakhosi 
+2012,Kaizer Chiefs,48,167,amakhosi 
+2013,Kaizer Chiefs,43,210,amakhosi 
+2014,Kaizer Chiefs,41,251,amakhosi 
+2015,Kaizer Chiefs,38,289,amakhosi 
+2016,Kaizer Chiefs,39,328,amakhosi 
+2017,Kaizer Chiefs,27,355,amakhosi 
+2018,Kaizer Chiefs,33,388,amakhosi 
+2019,Kaizer Chiefs,29,417,amakhosi 
+2009,Mamelodi Sundowns,43,43,the brazilians 
+2010,Mamelodi Sundowns,52,95,the brazilians 
+2011,Mamelodi Sundowns,44,139,the brazilians 
+2012,Mamelodi Sundowns,31,170,the brazilians 
+2013,Mamelodi Sundowns,51,221,the brazilians 
+2014,Mamelodi Sundowns,44,265,the brazilians 
+2015,Mamelodi Sundowns,55,320,the brazilians 
+2016,Mamelodi Sundowns,52,372,the brazilians 
+2017,Mamelodi Sundowns,49,421,the brazilians 
+2018,Mamelodi Sundowns,40,461,the brazilians 
+2019,Mamelodi Sundowns,19,480,the brazilians 
+2009,Maritzburg United,28,28,team of choice 
+2010,Maritzburg United,32,60,team of choice 
+2011,Maritzburg United,26,86,team of choice 
+2012,Maritzburg United,31,117,team of choice 
+2013,Maritzburg United,34,151,team of choice 
+2014,Maritzburg United,30,181,team of choice 
+2015,Maritzburg United,35,216,team of choice 
+2016,Maritzburg United,31,247,team of choice 
+2017,Maritzburg United,36,283,team of choice 
+2018,Maritzburg United,22,305,team of choice 
+2019,Maritzburg United,9,314,team of choice 
+2009,Moroka Swallows,30,30,the dube birds 
+2010,Moroka Swallows,26,56,the dube birds 
+2011,Moroka Swallows,48,104,the dube birds 
+2012,Moroka Swallows,41,145,the dube birds 
+2013,Moroka Swallows,29,174,the dube birds 
+2014,Moroka Swallows,30,204,the dube birds 
+2015,Moroka Swallows,0,204,the dube birds 
+2016,Moroka Swallows,0,204,the dube birds 
+2017,Moroka Swallows,0,204,the dube birds 
+2018,Moroka Swallows,0,204,the dube birds 
+2019,Moroka Swallows,0,204,the dube birds 
+2009,Mpumalanga Black Aces,20,20,amazayoni 
+2010,Mpumalanga Black Aces,19,39,amazayoni 
+2011,Mpumalanga Black Aces,0,39,amazayoni 
+2012,Mpumalanga Black Aces,0,39,amazayoni 
+2013,Mpumalanga Black Aces,34,73,amazayoni 
+2014,Mpumalanga Black Aces,35,108,amazayoni 
+2015,Mpumalanga Black Aces,37,145,amazayoni 
+2016,Mpumalanga Black Aces,0,145,amazayoni 
+2017,Mpumalanga Black Aces,0,145,amazayoni 
+2018,Mpumalanga Black Aces,0,145,amazayoni 
+2019,Mpumalanga Black Aces,0,145,amazayoni 
+2009,Orlando Pirates,26,26,amabhakabhaka 
+2010,Orlando Pirates,41,67,amabhakabhaka 
+2011,Orlando Pirates,40,107,amabhakabhaka 
+2012,Orlando Pirates,39,146,amabhakabhaka 
+2013,Orlando Pirates,30,176,amabhakabhaka 
+2014,Orlando Pirates,46,222,amabhakabhaka 
+2015,Orlando Pirates,38,260,amabhakabhaka 
+2016,Orlando Pirates,29,289,amabhakabhaka 
+2017,Orlando Pirates,41,330,amabhakabhaka 
+2018,Orlando Pirates,44,374,amabhakabhaka 
+2019,Orlando Pirates,22,396,amabhakabhaka 
+2009,Platinum Stars,26,26,dikwena 
+2010,Platinum Stars,34,60,dikwena 
+2011,Platinum Stars,37,97,dikwena 
+2012,Platinum Stars,48,145,dikwena 
+2013,Platinum Stars,32,177,dikwena 
+2014,Platinum Stars,30,207,dikwena 
+2015,Platinum Stars,41,248,dikwena 
+2016,Platinum Stars,33,281,dikwena 
+2017,Platinum Stars,23,304,dikwena 
+2018,Platinum Stars,0,304,dikwena 
+2019,Platinum Stars,0,304,dikwena 
+2009,Polokwane City,0,0,rise and shine 
+2010,Polokwane City,0,0,rise and shine 
+2011,Polokwane City,0,0,rise and shine 
+2012,Polokwane City,0,0,rise and shine 
+2013,Polokwane City,31,31,rise and shine 
+2014,Polokwane City,42,73,rise and shine 
+2015,Polokwane City,31,104,rise and shine 
+2016,Polokwane City,36,140,rise and shine 
+2017,Polokwane City,33,173,rise and shine 
+2018,Polokwane City,38,211,rise and shine 
+2019,Polokwane City,12,223,rise and shine 
+2009,Santos,34,34,jou lekker ding 
+2010,Santos,37,71,jou lekker ding 
+2011,Santos,34,105,jou lekker ding 
+2012,Santos,0,105,jou lekker ding 
+2013,Santos,0,105,jou lekker ding 
+2014,Santos,0,105,jou lekker ding 
+2015,Santos,0,105,jou lekker ding 
+2016,Santos,0,105,jou lekker ding 
+2017,Santos,0,105,jou lekker ding 
+2018,Santos,0,105,jou lekker ding 
+2019,Santos,0,105,jou lekker ding 
+2009,Stellenbosch ,0,0,stellies 
+2010,Stellenbosch ,0,0,stellies 
+2011,Stellenbosch ,0,0,stellies 
+2012,Stellenbosch ,0,0,stellies 
+2013,Stellenbosch ,0,0,stellies 
+2014,Stellenbosch ,0,0,stellies 
+2015,Stellenbosch ,0,0,stellies 
+2016,Stellenbosch ,0,0,stellies 
+2017,Stellenbosch ,0,0,stellies 
+2018,Stellenbosch ,0,0,stellies 
+2019,Stellenbosch ,12,12,stellies 
+2009,SuperSport United,51,51,matsatsantsa 
+2010,SuperSport United,32,83,matsatsantsa 
+2011,SuperSport United,39,122,matsatsantsa 
+2012,SuperSport United,30,152,matsatsantsa 
+2013,SuperSport United,38,190,matsatsantsa 
+2014,SuperSport United,39,229,matsatsantsa 
+2015,SuperSport United,36,265,matsatsantsa 
+2016,SuperSport United,42,307,matsatsantsa 
+2017,SuperSport United,28,335,matsatsantsa 
+2018,SuperSport United,29,364,matsatsantsa 
+2019,SuperSport United,20,384,matsatsantsa 
+2009,University of Pretoria,0,0,amatuks 
+2010,University of Pretoria,0,0,amatuks 
+2011,University of Pretoria,0,0,amatuks 
+2012,University of Pretoria,34,34,amatuks 
+2013,University of Pretoria,25,59,amatuks 
+2014,University of Pretoria,28,87,amatuks 
+2015,University of Pretoria,25,112,amatuks 
+2016,University of Pretoria,0,112,amatuks 
+2017,University of Pretoria,0,112,amatuks 
+2018,University of Pretoria,0,112,amatuks 
+2019,University of Pretoria,0,112,amatuks 
+2009,Vasco da Gama,0,0,vasco 
+2010,Vasco da Gama,35,35,vasco 
+2011,Vasco da Gama,0,35,vasco 
+2012,Vasco da Gama,0,35,vasco 
+2013,Vasco da Gama,0,35,vasco 
+2014,Vasco da Gama,0,35,vasco 
+2015,Vasco da Gama,0,35,vasco 
+2016,Vasco da Gama,0,35,vasco 
+2017,Vasco da Gama,0,35,vasco 
+2018,Vasco da Gama,0,35,vasco 
+2019,Vasco da Gama,0,35,vasco 
