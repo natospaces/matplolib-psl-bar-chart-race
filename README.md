@@ -17,7 +17,7 @@ Click on the picture below to see the chart animation(data filtered by beginning
 
 <b>pls_bar_chart_race_2020.py</b> - creates the chart animation using matplolib, code sourced from 
 [Gabriel Berardi](https://github.com/6berardi/racingbarchart/) and [PratapVardhan](https://github.com/6berardi/racingbarchart/)
-also note FFMpegWriter saving is windows 10 based, might be different for a Mac and Linux, it is assumed the data files are in the data subdirectory
+<br>also note FFMpegWriter saving is windows 10 based, might be different for a Mac and Linux, it is assumed the data files are in the data subdirectory
 
 
 
