@@ -6,3 +6,17 @@ A matplolib based bar chart race by goals scored from either beginning of 2009 s
 Click on the picture below to see the chart animation
 
 [![Watch the video](http://www.xhosanostra.co.za/izinto/barcharac.GIF)](https://www.youtube.com/watch?v=IgaGzYMjc_s)
+
+<b>bcrseason2009.sql</b> - sql file that prepares the data from match results to a format with running goals counts filtering either by beginning of season 2009 or 2010 calendar year
+
+<b>diskistats.xlsx</b> - raw data including both the processed data
+
+<b>diskistats_season2009.csv</b> - data file used by pls_bar_chart_race_2020.py to create the bar chart race, data filtered by beginning of season 2009-2010 to end of 2019
+
+<b>diskistats_calendar2010.csv - data file used by pls_bar_chart_race_2020.py to create the bar chart race, data filtered by beginning of year 2010 to end of 2019
+
+pls_bar_chart_race_2020.py</b> - matplotlib based files that creates the chart animation, code sourced from <a href="https://github.com/6berardi/racingbarchart/" target="_blank">Gabriel Berardi</a> and  <a href="https://towardsdatascience.com/@PratapVardhan " target="_blank">PratapVardhan</a>.
+
+The background music added using openshot and audacity.
+
+
