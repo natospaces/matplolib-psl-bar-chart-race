@@ -57,19 +57,22 @@ select          2,'starting from 1 Jan 2010'    ,concat(char(10)        ,'where 
 select           @filter_num            = 2
                 ,@sql_filter            = '';
 
+--if temp table exists drop it
 if object_id('tempdb..#t_diski_filtered') is not null
 begin
-    drop table  #t_diski_filtered;
-    create table #t_diski_filtered(
-     season         smallint null
-    ,home           varchar(50) null
-    ,visitor        varchar(50) null
-    ,fthg           tinyint null
-    ,ftag           tinyint null
-    ,dateplayed     date null
-    
-    ) 
-end;
+        drop table  #t_diski_filtered;
+end
+;
+
+create table #t_diski_filtered (
+         season         smallint    null
+        ,home           varchar(50) null
+        ,visitor        varchar(50) null
+        ,fthg           tinyint     null
+        ,ftag           tinyint     null
+        ,dateplayed     date        null
+) 
+;
 
 select      @sql_filter = concat(    @sql_filter                
                                 ,'insert  #t_diski_filtered(',char(10)
