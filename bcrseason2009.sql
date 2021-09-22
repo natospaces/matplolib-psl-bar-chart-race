@@ -77,7 +77,8 @@ end
 ;
 
 /*
-	temp table with same structure as typical football match result information
+	temp table with same structure as typical football match result information 
+	reason am using the temp table is to kind of optimise for joins to work with the data needed for the chart
 */
 create table #t_diski_filtered (
          season         smallint    null
