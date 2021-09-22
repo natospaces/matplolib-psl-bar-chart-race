@@ -1,7 +1,7 @@
 
 /*
 
-this is the structure of a typical football match csv for example so the idea of the script is to transform this to a structure easier to use for the bar chart source data
+this table mimics the structure of a typical football match csv, so the idea of the script is to transform data to this table  this to a structure easier to use for the bar chart source data
 
 create table dbo.t_diski(
 	 matchid        int identity(1,1) not null constraint [const_idx_match_id]  primary key clustered 
@@ -14,6 +14,12 @@ create table dbo.t_diski(
 	,result         varchar(50) null
 	,dateplayed     date null
 ) 
+go
+
+--constraints to deal with potential duplicates from csv import 
+alter table dbo.t_diski add constraint
+        unq_idx_t_diski_home_visitor_date unique (home,visitor,dateplayed);
+go
 */
 
 declare  @sql_filter    nvarchar(2000)
