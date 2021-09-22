@@ -1,5 +1,8 @@
 
 /*
+
+this is the structure of a typical football match csv for example so the idea of the script is to transform this to a structure easier to use for the bar chart source data
+
 create table dbo.t_diski(
 	 matchid        int identity(1,1) not null primary key
 	,season         smallint null
@@ -16,7 +19,10 @@ create table dbo.t_diski(
 declare  @sql_filter    nvarchar(2000)
         ,@filter_num    tinyint
 
---table to store the filter to t_diski table
+/*
+	table variable storing the dynamical sql generated filter 
+	to apply on the t_diski table
+*/
 declare @t_date_filter table
 (
           num                   tinyint 
@@ -31,13 +37,19 @@ declare @t_teams table(
         ,teamnick       nvarchar(50)
 )
 
+/*
+	table variable storing club goals scored running totals
+*/
+
 declare @t_teams_rolling table(
          season         smallint 
         ,club           varchar(50)
         ,goalscored     smallint
 )
 
---table to store club nicknames, useful for a much fancier bar chart race, club logos will also go into that table
+/*
+	table variable storing club nicknames, can be extended to have an extra column like a varbinary field to store a clubs logo file for example 
+*/
 declare @t_nick table
 (
          club           nvarchar(100)
@@ -53,7 +65,7 @@ insert @t_date_filter
 select          1,'starting from 2009 season'   ,concat(char(10)        ,'where d.season        >= 2009') union  --filters by starting from the beginning of 2009-2010 season
 select          2,'starting from 1 Jan 2010'    ,concat(char(10)        ,'where d.dateplayed    >= ''31-Dec-2009'' ')  --filters by starting from the beginning of the year 2010 
 
-
+--selecting second filter
 select           @filter_num            = 2
                 ,@sql_filter            = '';
 
@@ -64,6 +76,9 @@ begin
 end
 ;
 
+/*
+	temp table with same structure as typical football match result information
+*/
 create table #t_diski_filtered (
          season         smallint    null
         ,home           varchar(50) null
@@ -74,6 +89,13 @@ create table #t_diski_filtered (
 ) 
 ;
 
+/*
+	dynamic sql to filter the data
+		- reason for using dynamic sql is cater for all kinds of fancy filters
+		- replicate function used to for clean looking generated sql since 
+		  debugging dynamic sql can be challenging without proper formatting
+
+*/
 select      @sql_filter = concat(    @sql_filter                
                                 ,'insert  #t_diski_filtered(',char(10)
                                 ,replicate(char(32),6),' season',char(10)
@@ -94,9 +116,16 @@ select      @sql_filter = concat(    @sql_filter
                                 )
 from        @t_date_filter df
 where       df.num                      = @filter_num
-
+ 
 exec sp_executesql       @sql           = @sql_filter
 
+/*
+
+	inserting all the teams in the filter 
+	-- cross join used for all seasaon for factoring 
+	   the running total for season when a team is relegated
+
+*/
 insert @t_teams
 (
          club
@@ -113,42 +142,39 @@ from
 cross join
         (
                 select  distinct season
-                from    #t_diski_filtered
-     
+                from    #t_diski_filtered     
         ) sfilt
 
 insert @t_nick(  
          club
         ,nickname
 )
-select 'Ajax Cape Town' club,'urban warriors' nick union
-select 'Amazulu','usuthu' union
-select 'Baroka FC','bakgakga' union
-select 'Bidvest Wits','the clever boys' union
-select 'Black Leopards','lidoda duvha' union
-select 'Bloemfontein Celtic','phunya selesele' union
-select 'Cape Town City','the citizens' union
-select 'Chippa United','chilli boys' union
-select 'Free State Stars','ea lla koto' union
-select 'Golden Arrows','abafana besthende' union
-select 'Highlands Park','lions of the north' union
-select 'Jomo Cosmos','ezenkosi' union
-select 'Kaizer Chiefs','amakhosi' union
-select 'Mamelodi Sundowns','the brazilians' union
-select 'Maritzburg United','team of choice' union
-select 'Moroka Swallows','the dube birds' union
-select 'Mpumalanga Black Aces','amazayoni' union
-select 'Orlando Pirates','amabhakabhaka' union
-select 'Platinum Stars','dikwena' union
-select 'Polokwane City','rise and shine' union
-select 'Santos','jou lekker ding' union
-select 'Stellenbosch','stellies' union
-select 'SuperSport United','matsatsantsa' union
-select 'University of Pretoria','amatuks' union
-select 'Vasco da Gama','vasco' 
+select 'Ajax Cape Town' club,'Urban Warriors' nick union
+select 'Amazulu','Usuthu' union
+select 'Baroka FC','Bakgakga' union
+select 'Bidvest Wits','The Clever Boys' union
+select 'Black Leopards','Lidoda Duvha' union
+select 'Bloemfontein Celtic','Phunya Selesele' union
+select 'Cape Town City','The Citizens' union
+select 'Chippa United','Chilli Boys' union
+select 'Free State Stars','Ea Lla Koto' union
+select 'Golden Arrows','Abafana Besthende' union
+select 'Highlands Park','Lions of the North' union
+select 'Jomo Cosmos','Ezenkosi' union
+select 'Kaizer Chiefs','Amakhosi' union
+select 'Mamelodi Sundowns','The Brazilians' union
+select 'Maritzburg United','Team of Choice' union
+select 'Moroka Swallows','The Dube Birds' union
+select 'Mpumalanga Black Aces','Amazayoni' union
+select 'Orlando Pirates','Amabhakabhaka' union
+select 'Platinum Stars','Dikwena' union
+select 'Polokwane City','Rise and Shine' union
+select 'Santos','Jou Lekker Ding' union
+select 'Stellenbosch','Stellies' union
+select 'SuperSport United','Matsatsantsa' union
+select 'University of Pretoria','Amatuks' union
+select 'Vasco da Gama','Vasco' 
 
---update @t_nick
---set nickname = concat(nickname,' ')
 
 update  t
 set     teamnick          = n.nickname
@@ -204,29 +230,22 @@ order by         c.club
 update          t
 set             goalscored              = combined.goalscored
 from            @t_teams t
-inner join      @t_teams_rolling combined
+inner join      
+				@t_teams_rolling combined
 on              t.season                = combined.season
 and             t.club                  = combined.club
  
 
 
-select           season         as [year]
-                ,club           as [name]
-                ,goalscored     as SeasonGoalScored
+select           season         as [Year]
+                ,club           as [Club]
+                ,goalscored     as [Goals Scored]
                 ,sum(goalscored) over(  partition by  club order by season 
-                                        rows between unbounded preceding and current row) [value]  --key window function that gives the rolling sums by team
-                ,teamnick       [group]
+                                        rows between unbounded preceding and current row) [Goals Scored Running Total]  --key window function that gives the rolling sums by team
+                ,teamnick       Nickname
 from             @t_teams t
 order by         club
                 ,season asc
-
-/*
-select  *
-from    @t_nick
-*/
-
-
-
 
 
 
