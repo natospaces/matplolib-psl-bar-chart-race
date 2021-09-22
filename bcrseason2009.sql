@@ -4,7 +4,7 @@
 this is the structure of a typical football match csv for example so the idea of the script is to transform this to a structure easier to use for the bar chart source data
 
 create table dbo.t_diski(
-	 matchid        int identity(1,1) not null primary key
+	 matchid        int identity(1,1) not null constraint [const_idx_match_id]  primary key clustered 
 	,season         smallint null
 	,home           varchar(50) null
 	,visitor        varchar(50) null
