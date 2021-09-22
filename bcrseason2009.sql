@@ -1,7 +1,10 @@
 
 /*
 
-this table mimics the structure of a typical football match csv, so the idea of the script is to transform data to this table  this to a structure easier to use for the bar chart source data
+--this table mimics the structure of a typical football match csv, 
+--data to the table inserted from a csv using the management studio import export wizrd 
+--so the idea of the script is to transform data from the t_diski table data format to a format much easier to use for the python bar chart code
+
 
 create table dbo.t_diski(
 	 matchid        int identity(1,1) not null constraint [const_idx_match_id]  primary key clustered 
@@ -16,7 +19,7 @@ create table dbo.t_diski(
 ) 
 go
 
---constraints to deal with potential duplicates from csv import 
+--constraint to deal with potential duplicates from csv import 
 alter table dbo.t_diski add constraint
         unq_idx_t_diski_home_visitor_date unique (home,visitor,dateplayed);
 go
