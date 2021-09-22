@@ -8,14 +8,15 @@
 
 create table dbo.t_diski(
 	 matchid        int identity(1,1) not null constraint [const_idx_match_id]  primary key clustered 
-	,season         smallint null
-	,home           varchar(50) null
-	,visitor        varchar(50) null
-	,fulltime       varchar(50) null
-	,fthg           tinyint null
-	,ftag           tinyint null
-	,result         varchar(50) null
-	,dateplayed     date null
+	,season         smallint not null		--football season
+	,home           varchar(50) not null		--name of the home team this column could also be an integer if there was as separate table with team names
+	,visitor        varchar(50) not null		--name of the away team
+	,fulltime       varchar(10) not null		--text version of the final score essentially a concat(cast(fthg as varchar(2)), ' - ',cast(ftag as varchar(2)))
+	,fthg           tinyint not null		--goals scored by the home team at the end of the match
+	,ftag           tinyint not null		--goals scored by the away team at the end of the match
+	,result         char(1) not null		--match resukt encoded with a single character 'A' for away win, 'H' for home win and 'D' for draw	 
+	,dateplayed     date null			--date of the match, didn't use the time since I don't do analysis on time 
+							--but adding time and using datetime it as a consideration
 ) 
 go
 
